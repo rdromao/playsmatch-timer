@@ -1,33 +1,42 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.appTitle {
+  font-size: 48px;
+  padding: 16px;
+}
+
+.appTimerContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.appTimer {
+  font-size: 96px;
+}
+
+.timerButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.timerControlButton {
+  padding: 16px;
+  background-color: #fe4300;
   color: white;
+  cursor: pointer;
+  margin: 8px;
+  width: 56px;
+  text-align: center;
+  transition: opacity .2s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timerControlButton:hover {
+  opacity: .8;
 }
