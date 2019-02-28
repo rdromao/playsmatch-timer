@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/playsmatch-timer/precache-manifest.7c1575ef84f757d6212df5fe738636fb.js"
+  "/playsmatch-timer/precache-manifest.5d96ec330faa0b7d284713338260cdf9.js"
 );
 
 workbox.clientsClaim();
