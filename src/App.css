@@ -1,24 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed');
+
 .app {
+  font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .appTitle {
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 48px;
   padding: 16px;
+  flex: 0 0 50px;
+  text-align: center;
+  background-color: #eee;
 }
 
 .appTimerContainer {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex: 1;
   align-items: center;
+  justify-content: center;
+  background-color: #222;
+  color: #eee;
 }
 
 .appTimer {
-  font-size: 96px;
+  font-size: 120px;
 }
 
 .timerButtonsContainer {
@@ -35,6 +44,15 @@
   width: 56px;
   text-align: center;
   transition: opacity .2s;
+}
+
+.timerControlButton.blinking {
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  50%  { opacity: 0.4;}
+  100% { opacity: 1; }
 }
 
 .timerControlButton:hover {

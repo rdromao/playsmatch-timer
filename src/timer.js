@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const GAME_TIME_IN_SECS = 243
+const GAME_TIME_IN_SECS = 420
 
 class Timer extends Component {
     constructor(props) {
@@ -60,7 +60,7 @@ class Timer extends Component {
               : '0' + Math.floor(this.state.secsRemaining % 60)}
           </div>
           <div className='timerButtonsContainer'>
-            <div className='timerControlButton' onClick={this._handlePlayPause}>{this.state.playing ? "Pause":"Play"}</div>
+            <div className={this.state.playing ? 'timerControlButton blinking':'timerControlButton'} onClick={this._handlePlayPause}>{this.state.playing ? "Pause":"Play"}</div>
             <div className='timerControlButton' onClick={this._handleReset}>Reset</div>
           </div>
         </div>
