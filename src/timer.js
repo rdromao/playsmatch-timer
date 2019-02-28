@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const GAME_TIME_IN_SECS = 242
+const GAME_TIME_IN_SECS = 243
 
 class Timer extends Component {
     constructor(props) {
